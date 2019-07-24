@@ -1,0 +1,172 @@
+package com.ruoyi.bpr.domain;
+
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
+
+public class FundManage extends BaseEntity {
+
+    private static final long serialVersionUID = 9167074825078717374L;
+
+    private Integer id;
+
+    /**
+     * 客户代码
+     */
+    @Excel(name="客户代码")
+    private Integer clientCode;
+
+    /**
+     * 付款人
+     */
+    @Excel(name="付款人")
+    private String payer;
+
+    /**
+     * 付款账户
+     */
+    @Excel(name="付款账户")
+    private String paymentAccount;
+
+    /**
+     * 付款时间
+     */
+    private String paymentTime;
+
+    /**
+     * 付款方式代码
+     */
+    @Excel(name="付款方式代码")
+    private Integer paymentMethodCode;
+
+    /**
+     * 付款金额
+     */
+    private String paymentAmount;
+
+    /**
+     * 收款人
+     */
+    @Excel(name="付款金额")
+    private String payee;
+
+    /**
+     * 收款方账户
+     */
+    @Excel(name="收款方账户")
+    private String accountPayee;
+
+    /**
+     * 备注
+     */
+    @Excel(name="备注")
+    private String remark;
+
+    private String ack;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getClientCode() {
+        return clientCode;
+    }
+
+    public void setClientCode(Integer clientCode) {
+        this.clientCode = clientCode;
+    }
+
+    public String getPayer() {
+        return payer;
+    }
+
+    public void setPayer(String payer) {
+        this.payer = payer;
+    }
+
+    public String getPaymentAccount() {
+        return paymentAccount;
+    }
+
+    public void setPaymentAccount(String paymentAccount) {
+        this.paymentAccount = paymentAccount;
+    }
+
+    public String getPaymentTime() {
+        return paymentTime;
+    }
+
+    public void setPaymentTime(String paymentTime) {
+        this.paymentTime = paymentTime;
+    }
+
+    public Integer getPaymentMethodCode() {
+        return paymentMethodCode;
+    }
+
+    public void setPaymentMethodCode(Integer paymentMethodCode) {
+        this.paymentMethodCode = paymentMethodCode;
+    }
+
+    public String getPaymentAmount() {
+        return paymentAmount;
+    }
+
+    public void setPaymentAmount(String paymentAmount) {
+        this.paymentAmount = paymentAmount;
+    }
+
+    public String getPayee() {
+        return payee;
+    }
+
+    public void setPayee(String payee) {
+        this.payee = payee;
+    }
+
+    public String getAccountPayee() {
+        return accountPayee;
+    }
+
+    public void setAccountPayee(String accountPayee) {
+        this.accountPayee = accountPayee;
+    }
+
+    @Override
+    public String getRemark() {
+        return remark;
+    }
+
+    @Override
+    public void setRemark(String remark) {
+        this.remark = remark;
+    }
+
+    public String getAck() {
+        return ack;
+    }
+
+    public void setAck(String ack) {
+        this.ack = ack;
+    }
+
+    @Override
+    public String toString() {
+        return "FundManage{" +
+                "id=" + id +
+                ", clientCode=" + clientCode +
+                ", payer='" + payer + '\'' +
+                ", paymentAccount='" + paymentAccount + '\'' +
+                ", paymentTime='" + paymentTime + '\'' +
+                ", paymentMethodCode=" + paymentMethodCode +
+                ", paymentAmount='" + paymentAmount + '\'' +
+                ", payee='" + payee + '\'' +
+                ", accountPayee='" + accountPayee + '\'' +
+                ", remark='" + remark + '\'' +
+                ", ack='" + ack + '\'' +
+                '}';
+    }
+}

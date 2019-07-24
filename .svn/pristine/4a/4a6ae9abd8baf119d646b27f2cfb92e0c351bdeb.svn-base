@@ -1,0 +1,49 @@
+package com.ruoyi.web.controller.fundmanage;
+
+import com.ruoyi.bpr.domain.FundManage;
+import com.ruoyi.bpr.service.IFundManageService;
+import com.ruoyi.common.core.controller.BaseController;
+import com.ruoyi.common.core.page.TableDataInfo;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import java.util.List;
+
+@Controller
+@RequestMapping("/fundmanage/recievefund")
+public class RecieveFundController extends BaseController {
+
+    @Autowired
+    private IFundManageService fundManageService;
+
+    private String prefix = "fundmanage/recievefund";
+
+    @RequiresPermissions("fundmanage:recievefund:view")
+    @GetMapping()
+    public String recieveFund(){
+        return prefix +"/recievefund";
+    }
+
+    @RequiresPermissions("fundmanage:recievefund:list")
+    @PostMapping("/list")
+    @ResponseBody
+    public TableDataInfo list(FundManage fundManage){
+        startPage();
+        List<FundManage> list = fundManageService.selectFundManageList(fundManage);
+        return getDataTable(list);
+    }
+
+    /**
+     * 新增已收款项
+     * @return
+     */
+    @GetMapping("/add")
+    public String addRecievedFund() {
+        return prefix + "/add";
+    }
+
+}

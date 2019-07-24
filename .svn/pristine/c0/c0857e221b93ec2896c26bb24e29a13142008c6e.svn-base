@@ -1,0 +1,15 @@
+package com.ruoyi.bpr.service;
+
+import com.ruoyi.bpr.domain.ContractManage;
+import com.ruoyi.bpr.mapper.ContractManageMapper;
+
+import java.util.List;
+
+public interface ISalesDataService {
+    /**
+     * 查询销售台账信息
+     * @param contractManage
+     * @return
+     */
+    List<ContractManage> serchSalesDataList(ContractManage contractManage);
+}

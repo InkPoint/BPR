@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <th:block th:include="include :: header('车辆详情')"/>
+    <th:block th:include="include :: bootstrap-select-css"/>
+</head>
+<body class="gray-bg">
+<div class="container-div">
+    <div class="row">
+        <div class="col-sm-12 search-collapse">
+            <form id="vehicledetails-form">
+                <div class="select-list">
+                    <ul>
+                        <li>
+                            <label>合同编号： </label><input type="text" name="htbh"/>
+                        </li>
+                        <li>
+                            <label>经销商： </label><input type="text" name="jxs"/>
+                        </li>
+                        <li>
+                            <label>销售人员： </label><input type="text" name="ywgk"/>
+                        </li>
+                        <li class="select-time">
+                            <label>签订时间： </label>
+                            <input type="text" class="time-input" id="startTime" placeholder="开始时间"
+                                   name="params[beginTime]"/>
+                            <span>-</span>
+                            <input type="text" class="time-input" id="endTime" placeholder="结束时间"
+                                   name="params[endTime]"/>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary btn-rounded btn-sm" onclick="searchPre()"><i
+                                    class="fa fa-search"></i>&nbsp;搜索</a>
+                            <a class="btn btn-warning btn-rounded btn-sm" onclick="resetPre()"><i
+                                    class="fa fa-refresh"></i>&nbsp;重置</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <div class="btn-group-sm" id="toolbar" role="group">
+            <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="vehicle:vehicledetails:export">
+                <i class="fa fa-download"></i> 导出
+            </a>
+        </div>
+
+        <div class="col-sm-12 select-table table-striped">
+            <table id="bootstrap-table" data-mobile-responsive="true"></table>
+        </div>
+    </div>
+</div>
+
+<th:block th:include="include :: footer"/>
+<th:block th:include="include :: bootstrap-select-js"/>
+<script th:inline="javascript">
+    var prefix = ctx + "vehicle/vehicledetails";
+
+    $(function () {
+        var options = {
+            url: prefix + "/list",
+            detailUrl: prefix + "/detail/{id}",
+            exportUrl: prefix + "/export",
+            sortName: "qdrq",
+            sortOrder: "desc",
+            modalName: "车辆详情",
+            escape: true,
+            showPageGo: true,
+            rememberSelected: true,
+            columns: [{
+                field: 'state',
+                checkbox: true
+            },
+                {
+                    field: 'htbh',
+                    title: '合同编号(TL-X-)'
+                },
+                {
+                    field: 'jxs',
+                    title: '经销商'
+                },
+                {
+                    field: 'ywgk',
+                    title: '业务归口(销售经理)'
+                },
+                {
+                    field: 'sl',
+                    title: '数量'
+                },
+                {
+                    field: 'yfts',
+                    title: '已发台数',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        return '<span class="badge badge-success">' + value + '</span>';
+                    }
+                },
+                {
+                    field: 'cmrq',
+                    title: '出门日期(或计划发车时间)',
+                    align: 'center'
+                },
+                {
+                    field: 'qdrq',
+                    title: '签订日期',
+                    align: 'center',
+                    sortable: true
+                }]
+        };
+        $.table.init(options);
+    });
+
+    function searchPre() {
+        $.table.search('vehicledetails-form');
+    }
+
+    function resetPre() {
+        $.form.reset();
+        $("#businessTypes").selectpicker('refresh');
+    }
+</script>
+</body>
+</html>

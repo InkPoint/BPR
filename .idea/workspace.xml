@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" line="15" />
+    <bookmark url="file://$PROJECT_DIR$/ruoyi-common/src/main/java/com/ruoyi/common/utils/sql/DBUtil.java" line="20" />
+    <bookmark url="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java" line="135" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54507969-4320-446c-a1c5-91709d2b7228" name="Default Changelist" comment="1.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/ruoyi-admin/target/" />
+    <ignored path="$PROJECT_DIR$/ruoyi-quartz/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/ruoyi-framework/target/" />
+    <ignored path="$PROJECT_DIR$/ruoyi-system/target/" />
+    <ignored path="$PROJECT_DIR$/ruoyi-common/target/" />
+    <ignored path="$PROJECT_DIR$/ruoyi-generator/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="90" column="63" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1326#1327#0" expanded="true" />
+                <element signature="e#1372#1373#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/fundmanage/FundManageMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2691">
+              <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
+              <folding>
+                <element signature="n#update#0;n#mapper#0;n#!!top" />
+                <element signature="n#select#3;n#mapper#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/recievefund.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="99" lean-forward="true" selection-start-line="18" selection-start-column="99" selection-end-line="18" selection-end-column="99" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="76" column="118" selection-start-line="76" selection-start-column="118" selection-end-line="76" selection-end-column="118" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#label#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#label#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/mapper/FundManageMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="392">
+              <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/IFundManageService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/impl/FundManageServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="11" column="66" lean-forward="true" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#671#672#0" expanded="true" />
+                <element signature="e#733#734#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#1008#1009#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
+                <element signature="e#1211#1212#0" expanded="true" />
+                <element signature="e#1238#1239#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>demo</find>
+      <find>若依启动成功</find>
+      <find>RuoYi</find>
+      <find>Copyrigh</find>
+      <find>iphone</find>
+      <find>sh</find>
+      <find>mysql驱动</find>
+      <find>驱动</find>
+      <find>合同</find>
+      <find>startTime</find>
+      <find>com.mysql.cj</find>
+      <find>DUAL</find>
+      <find>createTime</find>
+      <find>Date</find>
+      <find>resetPre</find>
+      <find>businessTypes</find>
+      <find>sqlserver</find>
+      <find>用于管理集团旗下公司的人员信息,具体包括XXX,XXX模块</find>
+      <find>createtime</find>
+      <find>create</find>
+      <find>selectFundManageList</find>
+      <find>th:each</find>
+      <find>required</find>
+      <find>yfdj</find>
+      <find>&lt;update</find>
+      <find>$.operate.post</find>
+      <find>submitHandler</find>
+      <find>validate</find>
+      <find>selectDictTypeById</find>
+      <find>rem</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/core/config/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/banner.txt" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/RuoYiApplication.java" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/main.html" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/ISysRepertoryService.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/impl/SysRepertoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ruoyi-common/src/main/java/com/ruoyi/common/utils/sql/DBUtil.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/pom.xml" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/monitor/operlog/operlog.html" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/domain/SysRepertory.java" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/vehicle/SysRepertoryController.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/vehicle/SysRepertoryMapper.xml" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/mapper/SysRepertoryMapper.java" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/repertory/repertory.html" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/contractmanage/contractentry/contractentry.html" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/domain/FundManage.java" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/add.html" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/static/ruoyi/js/ry-ui.js" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/edit.html" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/IFundManageService.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/mapper/FundManageMapper.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/impl/FundManageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/fundmanage/FundManageMapper.xml" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/recievefund.html" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\MavenRepository" />
+        <option name="mavenHome" value="D:/InternetApplications/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\InternetApplications\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1036" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="contractentry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fundmanage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="fundmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="recievefund" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="dict" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BPR" type="462c0819:PsiDirectoryNode" />
+              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="dict" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="D:/MyProject/carmonitorXny_v5" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ruoyi.vehicle.service.impl" />
+      <recent name="com.ruoyi.vehicle.mapper" />
+      <recent name="com.ruoyi.vehicle.service" />
+      <recent name="com.ruoyi.vehicle.domain" />
+      <recent name="com.ruoyi.web.controller.vehicle" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SvnProject\BPR\ruoyi-admin\src\main\resources\templates\fundmanage\recievefund" />
+      <recent name="D:\SvnProject\BPR\ruoyi-admin\src\main\resources\templates\vehicle\repertory" />
+      <recent name="D:\SvnProject\BPR\ruoyi-system\src\main\resources\mapper\vehicle" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="RuoYiApplication、" />
+      <command value="mvn install" />
+      <command value="mvn compile" />
+      <command value="BPR" />
+      <command value="mvn clean" />
+      <command value="RuoYiApplication" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.RuoYiApplication">
+    <configuration name="BPR" type="DEPLOY_HOST_RUN_CONFIGURATION" factoryName="Deploy to Host">
+      <option name="address" value="10.68.70.29" />
+      <option name="alreadyReset" value="true" />
+      <option name="autoOpen" value="false" />
+      <option name="command" value="sh restart-bpr.sh restart" />
+      <option name="defaultTabIdx" value="0" />
+      <option name="ecsInstance">
+        <EcsInstance>
+          <option name="OSType" />
+          <option name="instanceId" />
+          <option name="instanceName" />
+          <option name="netType" />
+          <option name="privateIps" />
+          <option name="publicIps" />
+          <option name="regionId" />
+          <option name="tags" />
+        </EcsInstance>
+      </option>
+      <option name="hostTagId" value="1" />
+      <option name="location" value="/home/wpw/" />
+      <option name="pathOrUrl" value="D:\SvnProject\BPR\ruoyi-admin\target\ruoyi-admin.jar" />
+      <option name="tagId" value="1" />
+      <option name="terminalCommand" />
+      <option name="type" value="HOST" />
+      <option name="uploadType" value="FILE" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean package" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ruoyi-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.RuoYiApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Deploy to Host.BPR" />
+      <item itemvalue="Spring Boot.RuoYiApplication" />
+    </list>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\ChungWe\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\SvnProject\BPR" />
+          <option name="myCopyRoot" value="D:\SvnProject\BPR" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\SvnProject\BPR\.idea" />
+          <option name="myCopyRoot" value="D:\SvnProject\BPR\.idea" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\SvnProject\BPR\ruoyi-admin" />
+          <option name="myCopyRoot" value="D:\SvnProject\BPR\ruoyi-admin" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\SvnProject\BPR\ruoyi-common" />
+          <option name="myCopyRoot" value="D:\SvnProject\BPR\ruoyi-common" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\SvnProject\BPR\ruoyi-framework" />
+          <option name="myCopyRoot" value="D:\SvnProject\BPR\ruoyi-framework" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\SvnProject\BPR\ruoyi-generator" />
+          <option name="myCopyRoot" value="D:\SvnProject\BPR\ruoyi-generator" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\SvnProject\BPR\ruoyi-quartz" />
+          <option name="myCopyRoot" value="D:\SvnProject\BPR\ruoyi-quartz" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\SvnProject\BPR\ruoyi-system" />
+          <option name="myCopyRoot" value="D:\SvnProject\BPR\ruoyi-system" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\SvnProject\BPR" />
+          <option name="myCopyRoot" value="D:\SvnProject\BPR" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54507969-4320-446c-a1c5-91709d2b7228" name="Default Changelist" comment="" />
+      <created>1560743227340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560743227340</updated>
+      <workItem from="1560743235482" duration="8202000" />
+      <workItem from="1562644592028" duration="1737000" />
+      <workItem from="1562655906829" duration="34261000" />
+      <workItem from="1563150672720" duration="34104000" />
+      <workItem from="1563244711796" duration="14513000" />
+      <workItem from="1563361512158" duration="4544000" />
+      <workItem from="1563414355824" duration="18644000" />
+      <workItem from="1563756634061" duration="58000" />
+      <workItem from="1563756766330" duration="2264000" />
+      <workItem from="1563760060187" duration="25925000" />
+      <workItem from="1563846865493" duration="4556000" />
+      <workItem from="1563867690986" duration="22457000" />
+    </task>
+    <task id="LOCAL-00001" summary="1.新增从库SQL Server；&#10;2.把driverClassName注释了；">
+      <created>1563183343880</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563183343881</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.引进SQ Lserver驱动包，没指定具体版本号；">
+      <created>1563183414069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1563183414069</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1.引进SQLserver驱动包；">
+      <created>1563185347052</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1563185347052</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1.引进SQLserver驱动包；">
+      <created>1563185364804</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563185364804</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1.引进SQLserver驱动包；">
+      <created>1563185396253</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1563185396253</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1.统计车辆总数；">
+      <created>1563422468566</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1563422468566</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1.固定列；">
+      <created>1563432004067</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563432004067</updated>
+    </task>
+    <task id="LOCAL-00008">
+      <created>1563507360637</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1563507360637</updated>
+    </task>
+    <task id="LOCAL-00009">
+      <created>1563760470890</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563760470891</updated>
+    </task>
+    <task id="LOCAL-00010" summary="1.新增父子表；">
+      <created>1563788302684</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563788302684</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1.修改了已收账款查询方法；&#10;2.新增客户下拉菜单；">
+      <created>1563788361566</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1563788361566</updated>
+    </task>
+    <task id="LOCAL-00012">
+      <created>1563788376942</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1563788376942</updated>
+    </task>
+    <task id="LOCAL-00013" summary="1.页面整改；&#10;2.新增客户下拉菜单；">
+      <created>1563788436615</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1563788436615</updated>
+    </task>
+    <task id="LOCAL-00014" summary="1.修改初始化查询语句；&#10;2.修改条件查询语句；&#10;3.新增客户下拉菜单查询；">
+      <created>1563788493520</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1563788493520</updated>
+    </task>
+    <task id="LOCAL-00015" summary="1.新增客户菜单；">
+      <created>1563788520419</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1563788520419</updated>
+    </task>
+    <task id="LOCAL-00016" summary="1.新增客户菜单；">
+      <created>1563788542286</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1563788542286</updated>
+    </task>
+    <task id="LOCAL-00017" summary="1.新增客户菜单；">
+      <created>1563788567385</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1563788567385</updated>
+    </task>
+    <task id="LOCAL-00018" summary="1.新增金额校验；&#10;2.规则：清除“数字”和“.”以外的字符；&#10;3.只保留一个“.”;&#10;4.只能输入两个小数；">
+      <created>1563867073123</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1563867073123</updated>
+    </task>
+    <task id="LOCAL-00019" summary="1.移除子级访问数据权限；">
+      <created>1563868944026</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1563868944026</updated>
+    </task>
+    <task id="LOCAL-00020" summary="1.修改已收账款校验；">
+      <created>1563869542145</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1563869542145</updated>
+    </task>
+    <task id="LOCAL-00021" summary="1.异步删除；">
+      <created>1563874746784</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1563874746784</updated>
+    </task>
+    <task id="LOCAL-00022" summary="1.异步删除；">
+      <created>1563874770824</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1563874770824</updated>
+    </task>
+    <task id="LOCAL-00023" summary="1.异步删除；">
+      <created>1563874789064</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1563874789064</updated>
+    </task>
+    <task id="LOCAL-00024" summary="1.异步删除；">
+      <created>1563874805699</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1563874805699</updated>
+    </task>
+    <task id="LOCAL-00025" summary="1.异步删除；">
+      <created>1563874818175</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1563874818175</updated>
+    </task>
+    <task id="LOCAL-00026" summary="1.异步删除；">
+      <created>1563874833941</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1563874833941</updated>
+    </task>
+    <task id="LOCAL-00027" summary="1.修改已收账款；">
+      <created>1563936328892</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1563936328892</updated>
+    </task>
+    <task id="LOCAL-00028" summary="1.修改已收账款；">
+      <created>1563936349530</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1563936349530</updated>
+    </task>
+    <task id="LOCAL-00029" summary="1.修改已收账款；">
+      <created>1563936379163</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1563936379163</updated>
+    </task>
+    <task id="LOCAL-00030" summary="1.修改已收账款；">
+      <created>1563936392411</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1563936392411</updated>
+    </task>
+    <task id="LOCAL-00031" summary="1.修改已收账款；">
+      <created>1563936407238</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1563936407238</updated>
+    </task>
+    <task id="LOCAL-00032" summary="1.修改已收账款；">
+      <created>1563936418752</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1563936418752</updated>
+    </task>
+    <task id="LOCAL-00033" summary="1.调试优化；">
+      <created>1563951595274</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1563951595274</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="171265000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18813469" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.46969697" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44047618" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.27705628" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.5151515" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32900432" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="15" weight="0.32900432" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.14552239" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.1119403" />
+      <window_info anchor="right" id="aiXcoder" order="10" weight="0.23880596" />
+      <window_info anchor="right" id="Alibaba Log Console" order="11" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18813469" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.46969697" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.44047618" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.27705628" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.5151515" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32900432" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="15" weight="0.32900432" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.14552239" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" weight="0.1119403" />
+      <window_info anchor="right" id="aiXcoder" order="10" weight="0.23880596" />
+      <window_info anchor="right" id="Alibaba Log Console" order="11" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1.修改数据连接地址；" />
+    <MESSAGE value="1.新增从库SQL Server；&#10;2.把driverClassName注释了；" />
+    <MESSAGE value="1.引进SQ Lserver驱动包，没指定具体版本号；" />
+    <MESSAGE value="1.引进SQLserver驱动包；" />
+    <MESSAGE value="1.统计车辆总数；" />
+    <MESSAGE value="1.固定列；" />
+    <MESSAGE value="1.更改数据库连接地址；&#10;2.从库内网IP改为外网IP;" />
+    <MESSAGE value="1.内网mysql连接地址改为公网连接；&#10;2.内网从库连接改为公网连接；" />
+    <MESSAGE value="1.新增父子表；" />
+    <MESSAGE value="1.修改了已收账款查询方法；&#10;2.新增客户下拉菜单；" />
+    <MESSAGE value="1.页面整改；&#10;2.新增客户下拉菜单；" />
+    <MESSAGE value="1.修改初始化查询语句；&#10;2.修改条件查询语句；&#10;3.新增客户下拉菜单查询；" />
+    <MESSAGE value="1.新增客户菜单；" />
+    <MESSAGE value="1.新增金额校验；&#10;2.规则：清除“数字”和“.”以外的字符；&#10;3.只保留一个“.”;&#10;4.只能输入两个小数；" />
+    <MESSAGE value="1.移除子级访问数据权限；" />
+    <MESSAGE value="1.修改已收账款校验；" />
+    <MESSAGE value="1.异步删除；" />
+    <MESSAGE value="1.修改已收账款；" />
+    <MESSAGE value="1.调试优化；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.调试优化；" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="54" column="65" lean-forward="true" selection-start-line="54" selection-start-column="65" selection-end-line="54" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/basics/SysDealerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-299">
+          <caret line="62" column="88" lean-forward="true" selection-start-line="62" selection-start-column="88" selection-end-line="62" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/impl/SysVehicleDetailsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/vehicle/SysVehicleDetailsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/vehicledetails/vehicledetails.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysRoleDeptMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2300">
+          <caret line="163" column="43" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysRoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="54" column="97" lean-forward="true" selection-start-line="54" selection-start-column="97" selection-end-line="54" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/vehicle/SysVehicleDetailsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/ISysDealerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/basics/client/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/role/role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-598">
+          <caret line="32" column="101" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="101" />
+          <folding>
+            <element signature="e#1353#1359#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/monitor/operlog/operlog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/org/springframework/ui/ModelMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/monitor/operlog/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="71" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/contractmanage/contractentry/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="566" column="16" selection-start-line="566" selection-start-column="16" selection-end-line="566" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#22150#22729#0" />
+            <element signature="e#22753#22828#0" />
+            <element signature="e#22849#23388#0" />
+            <element signature="e#23415#23962#0" />
+            <element signature="e#23981#24577#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/static/ajax/libs/validate/jquery.validate.extend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="52" column="37" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-framework/src/main/java/com/ruoyi/framework/aspectj/DataScopeAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-common/src/main/java/com/ruoyi/common/utils/poi/ExcelUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="59" column="79" lean-forward="true" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2852">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/user/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3105" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="99" column="40" lean-forward="true" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysOperLogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/SysOperlogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="method#list#0;class#SysOperlogController#0" />
+            <element signature="e#2217#2218#0" expanded="true" />
+            <element signature="e#2286#2287#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysOperLogMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="75" column="11" lean-forward="true" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="11" />
+          <folding>
+            <element signature="e#2674#2678#0" expanded="true" />
+            <element signature="e#2849#2853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-common/src/main/java/com/ruoyi/common/core/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="110" column="46" lean-forward="true" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
+          <folding>
+            <element signature="e#2829#2830#0" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/InternetApplications/Java/jdk-8u202/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="375" column="32" lean-forward="true" selection-start-line="375" selection-start-column="32" selection-end-line="375" selection-end-column="32" />
+          <folding>
+            <element signature="e#15747#15748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-quartz/src/main/resources/templates/monitor/job/job.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="153" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/domain/FundManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/dict/data/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/dict/data/data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="125" column="51" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/dict/data/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="95" column="83" lean-forward="true" selection-start-line="95" selection-start-column="83" selection-end-line="95" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysDictTypeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDictTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+          <folding>
+            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="e#1541#1542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDictTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysDictTypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="93" column="69" lean-forward="true" selection-start-line="93" selection-start-column="69" selection-end-line="93" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysDictTypeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="79" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/static/ruoyi/js/ry-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="729" column="49" lean-forward="true" selection-start-line="729" selection-start-column="49" selection-end-line="729" selection-end-column="49" />
+          <folding>
+            <element signature="e#231#5416#0" />
+            <element signature="e#25#31#1" expanded="true" />
+            <element signature="e#18402#21118#0" />
+            <element signature="e#21149#22167#0" />
+            <element signature="e#22200#30381#0" />
+            <element signature="e#30500#31051#0" />
+            <element signature="e#31424#31889#0" />
+            <element signature="e#31949#32528#0" />
+            <element signature="e#33180#33691#0" />
+            <element signature="e#33743#33969#0" />
+            <element signature="e#34021#34122#0" />
+            <element signature="e#34186#34290#0" />
+            <element signature="e#34349#34558#0" />
+            <element signature="e#34615#34779#0" />
+            <element signature="e#35537#35639#0" />
+            <element signature="e#35699#36194#0" />
+            <element signature="e#36252#36831#0" />
+            <element signature="e#36906#37498#0" />
+            <element signature="e#37579#38474#0" />
+            <element signature="e#38550#39108#0" />
+            <element signature="e#39187#39848#0" />
+            <element signature="e#40399#41430#0" />
+            <element signature="e#41517#42644#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="90" column="63" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1372#1373#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/contractmanage/contractentry/contractentry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="146" column="20" lean-forward="true" selection-start-line="146" selection-start-column="20" selection-end-line="147" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/fundmanage/FundManageMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2691">
+          <caret line="134" column="13" selection-start-line="134" selection-start-column="13" selection-end-line="134" selection-end-column="13" />
+          <folding>
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#select#3;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/recievefund.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="99" lean-forward="true" selection-start-line="18" selection-start-column="99" selection-end-line="18" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="76" column="118" selection-start-line="76" selection-start-column="118" selection-end-line="76" selection-end-column="118" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/mapper/FundManageMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/IFundManageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/impl/FundManageServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="11" column="66" lean-forward="true" selection-start-line="11" selection-start-column="66" selection-end-line="11" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#671#672#0" expanded="true" />
+            <element signature="e#733#734#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1238#1239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,17 @@
+package com.ruoyi.bpr.mapper;
+
+import com.ruoyi.bpr.domain.ContractManage;
+
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface SalesDataMapper {
+    /**
+     * 查找销售台账信息
+     * @param contractManage
+     * @return
+     */
+    List<ContractManage> selectSalesDataList(ContractManage contractManage);
+}

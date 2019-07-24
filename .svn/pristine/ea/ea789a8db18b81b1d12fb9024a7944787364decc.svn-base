@@ -1,0 +1,24 @@
+package com.ruoyi.bpr.service;
+
+import com.ruoyi.bpr.domain.ContractManage;
+
+import java.util.List;
+
+public interface IContractEntryService {
+
+    /**
+     *  新增合同
+     * @param contractManage 合同信息
+     * @return 结果
+     */
+    public int insertContract(ContractManage contractManage);
+
+    /**
+     * 查询合同一览表集合
+     * @param contractManage 操作合同对象
+     * @return 操作合同一览表集合
+     */
+    public List<ContractManage> selectContractList(ContractManage contractManage);
+
+    public String checkHtbhUnique(String htbh);
+}
