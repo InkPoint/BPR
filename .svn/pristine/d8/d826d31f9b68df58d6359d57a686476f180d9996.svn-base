@@ -1,0 +1,681 @@
+package com.ruoyi.bpr.domain;
+
+import com.ruoyi.common.annotation.Excel;
+import com.ruoyi.common.core.domain.BaseEntity;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+/**   
+ * 操作日志记录表 dj_htly
+ */
+public class ContractManage extends BaseEntity {
+
+    private static final long serialVersionUID = 1L;
+
+    private Integer id;
+
+    /**
+     * 合同编号
+     */
+    @Excel(name = "合同编号")
+    private String htbh;
+
+    /**
+     * 经销商
+     */
+    @Excel(name = "经销商")
+    private String jxs;
+
+    /**
+     * 我方同签订
+     */
+    @Excel(name = "我方同签订(分公司或总公司)", readConverterExp = "1=总公司,2=分公司")
+    private String wftqd;
+
+    /**
+     * 返利归口
+     */
+    @Excel(name = "返利归口(经销商)")
+    private String flgk;
+
+    /**
+     * 业务归口
+     */
+    @Excel(name = "业务归口(销售经理)")
+    private String ywgk;
+
+    /**
+     * 车辆型号
+     */
+    @Excel(name = "车辆型号")
+    private String clxhDm;
+
+    /**
+     * 合同单价
+     */
+    @Excel(name = "合同单价")
+    private BigDecimal htdj;
+
+    /**
+     * 数量
+     */
+    @Excel(name = "数量")
+    private Integer sl;
+
+    /**
+     * 合同总金额
+     */
+    @Excel(name = "合同总金额")
+    private BigDecimal htzje;
+
+    /**
+     * 经销商与合同价格
+     */
+    @Excel(name = "经销商与客户价格")
+    private BigDecimal jxsykhjg;
+
+    /**
+     * 随车配件
+     */
+    @Excel(name = "随车配件")
+    private String scpj;
+
+    /**
+     * 核算价格
+     */
+    @Excel(name = "核算单价(交货价)")
+    private BigDecimal hsdj;
+
+    /**
+     * 运输方式
+     */
+    @Excel(name = "运输方式")
+    private String ysfsDm;
+
+    /**
+     * 合同单价是否含运费
+     */
+    @Excel(name = "合同单价是否含运费", readConverterExp = "0=是,1=否")
+    private String htdjsfhyf;
+
+    /**
+     * 运费单价
+     */
+    @Excel(name = "运费单价(元/台)")
+    private BigDecimal yfdj;
+
+    /**
+     * 未发车数
+     */
+    @Excel(name = "未发车数")
+    private Integer wfcs;
+
+    /**
+     * 已发台数
+     */
+    @Excel(name = "已发车数")
+    private Integer yfts;
+
+    /**
+     * 出门日期
+     */
+    @Excel(name = "出门日期(或计划发车时间)")
+    private String cmrq;
+
+    /**
+     * 出门证号
+     */
+    @Excel(name = "出门证号")
+    private String cmzh;
+
+    /**
+     * 付款方式
+     */
+    @Excel(name = "付款方式")
+    private String fkfsDm;
+
+    /**
+     * 管理费
+     */
+    @Excel(name = "管理费")
+    private BigDecimal glf;
+
+    /**
+     * 利息
+     */
+    @Excel(name = "利息")
+    private BigDecimal lx;
+
+    /**
+     * 约定付款条件
+     */
+    @Excel(name = "约定付款条件")
+    private String ydfktj;
+
+    /**
+     * 质保金到期时间
+     */
+    @Excel(name = "质保金到期时间", dateFormat = "yyyy-MM-dd")
+    private String zbjdqsj;
+
+    /**
+     * 质保金
+     */
+    @Excel(name = "质保金")
+    private BigDecimal zbj;
+
+    /**
+     * 是否计销量
+     */
+    @Excel(name = "是否记销量", readConverterExp = "0=是,1=否")
+    private String sfjxl;
+
+    /**
+     * 签订日期
+     */
+    @Excel(name = "签订日期", dateFormat = "yyyy-MM-dd")
+    private String qdrq;
+
+    /**
+     * 合同原件
+     */
+    @Excel(name = "合同原件", readConverterExp = "0=有,1=无")
+    private String htyj;
+
+    /**
+     * 技术协议
+     */
+    @Excel(name = "技术协议", readConverterExp = "0=有,1=无")
+    private String jsxy;
+
+    /**
+     * 服务协议
+     */
+    @Excel(name = "服务协议", readConverterExp = "0=有,1=无")
+    private String fwxy;
+
+    /**
+     * 担保书
+     */
+    @Excel(name = "担保书", readConverterExp = "0=有,1=无")
+    private String dbs;
+
+    /**
+     * 合同评审
+     */
+    @Excel(name = "合同评审", readConverterExp = "0=有,1=无")
+    private String htps;
+
+    /**
+     * 客户
+     */
+    @Excel(name = "客户")
+    private String kh;
+
+    /**
+     * 工地名称
+     */
+    @Excel(name = "工地名称")
+    private String gdmc;
+
+    /**
+     * 约定提车日
+     */
+    @Excel(name = "约定提车日", dateFormat = "yyyy-MM-dd")
+    private String ydtcr;
+
+    /**
+     * 服务方式或服务商
+     */
+    @Excel(name = "服务方式或服务商")
+    private String fwfshfws;
+
+    /**
+     * 服务期限或特殊约定
+     */
+    @Excel(name = "服务期限或特殊约定")
+    private String fwqxhtsyd;
+
+    /**
+     * 备注
+     */
+    @Excel(name = "备注")
+    private String bz;
+
+    /**
+     * 是否作废
+     */
+    private String sfzf;
+
+    /**
+     * 有效标志
+     */
+    private String yxbz;
+
+    /**
+     * 创建时间
+     */
+    private Date cjsj;
+
+    /**
+     * 创建人
+     */
+    private String cjr;
+
+    /**
+     * 修改时间
+     */
+    private Date xgsj;
+
+    /**
+     * 修改人
+     */
+    private String xgr;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getHtbh() {
+        return htbh;
+    }
+
+    public void setHtbh(String htbh) {
+        this.htbh = htbh;
+    }
+
+    public String getJxs() {
+        return jxs;
+    }
+
+    public void setJxs(String jxs) {
+        this.jxs = jxs;
+    }
+
+    public String getWftqd() {
+        return wftqd;
+    }
+
+    public void setWftqd(String wftqd) {
+        this.wftqd = wftqd;
+    }
+
+    public String getFlgk() {
+        return flgk;
+    }
+
+    public void setFlgk(String flgk) {
+        this.flgk = flgk;
+    }
+
+    public String getYwgk() {
+        return ywgk;
+    }
+
+    public void setYwgk(String ywgk) {
+        this.ywgk = ywgk;
+    }
+
+    public String getClxhDm() {
+        return clxhDm;
+    }
+
+    public void setClxhDm(String clxhDm) {
+        this.clxhDm = clxhDm;
+    }
+
+    public BigDecimal getHtdj() {
+        return htdj;
+    }
+
+    public void setHtdj(BigDecimal htdj) {
+        this.htdj = htdj;
+    }
+
+    public Integer getSl() {
+        return sl;
+    }
+
+    public void setSl(Integer sl) {
+        this.sl = sl;
+    }
+
+    public BigDecimal getHtzje() {
+        return htzje;
+    }
+
+    public void setHtzje(BigDecimal htzje) {
+        this.htzje = htzje;
+    }
+
+    public BigDecimal getJxsykhjg() {
+        return jxsykhjg;
+    }
+
+    public void setJxsykhjg(BigDecimal jxsykhjg) {
+        this.jxsykhjg = jxsykhjg;
+    }
+
+    public String getScpj() {
+        return scpj;
+    }
+
+    public void setScpj(String scpj) {
+        this.scpj = scpj;
+    }
+
+    public BigDecimal getHsdj() {
+        return hsdj;
+    }
+
+    public void setHsdj(BigDecimal hsdj) {
+        this.hsdj = hsdj;
+    }
+
+    public String getYsfsDm() {
+        return ysfsDm;
+    }
+
+    public void setYsfsDm(String ysfsDm) {
+        this.ysfsDm = ysfsDm;
+    }
+
+    public String getHtdjsfhyf() {
+        return htdjsfhyf;
+    }
+
+    public void setHtdjsfhyf(String htdjsfhyf) {
+        this.htdjsfhyf = htdjsfhyf;
+    }
+
+    public BigDecimal getYfdj() {
+        return yfdj;
+    }
+
+    public void setYfdj(BigDecimal yfdj) {
+        this.yfdj = yfdj;
+    }
+
+    public Integer getWfcs() {
+        return wfcs;
+    }
+
+    public void setWfcs(Integer wfcs) {
+        this.wfcs = wfcs;
+    }
+
+    public Integer getYfts() {
+        return yfts;
+    }
+
+    public void setYfts(Integer yfts) {
+        this.yfts = yfts;
+    }
+
+    public String getCmrq() {
+        return cmrq;
+    }
+
+    public void setCmrq(String cmrq) {
+        this.cmrq = cmrq;
+    }
+
+    public String getCmzh() {
+        return cmzh;
+    }
+
+    public void setCmzh(String cmzh) {
+        this.cmzh = cmzh;
+    }
+
+    public String getFkfsDm() {
+        return fkfsDm;
+    }
+
+    public void setFkfsDm(String fkfsDm) {
+        this.fkfsDm = fkfsDm;
+    }
+
+    public BigDecimal getGlf() {
+        return glf;
+    }
+
+    public void setGlf(BigDecimal glf) {
+        this.glf = glf;
+    }
+
+    public BigDecimal getLx() {
+        return lx;
+    }
+
+    public void setLx(BigDecimal lx) {
+        this.lx = lx;
+    }
+
+    public String getYdfktj() {
+        return ydfktj;
+    }
+
+    public void setYdfktj(String ydfktj) {
+        this.ydfktj = ydfktj;
+    }
+
+    public String getZbjdqsj() {
+        return zbjdqsj;
+    }
+
+    public void setZbjdqsj(String zbjdqsj) {
+        this.zbjdqsj = zbjdqsj;
+    }
+
+    public BigDecimal getZbj() {
+        return zbj;
+    }
+
+    public void setZbj(BigDecimal zbj) {
+        this.zbj = zbj;
+    }
+
+    public String getSfjxl() {
+        return sfjxl;
+    }
+
+    public void setSfjxl(String sfjxl) {
+        this.sfjxl = sfjxl;
+    }
+
+    public String getQdrq() {
+        return qdrq;
+    }
+
+    public void setQdrq(String qdrq) {
+        this.qdrq = qdrq;
+    }
+
+    public String getHtyj() {
+        return htyj;
+    }
+
+    public void setHtyj(String htyj) {
+        this.htyj = htyj;
+    }
+
+    public String getJsxy() {
+        return jsxy;
+    }
+
+    public void setJsxy(String jsxy) {
+        this.jsxy = jsxy;
+    }
+
+    public String getFwxy() {
+        return fwxy;
+    }
+
+    public void setFwxy(String fwxy) {
+        this.fwxy = fwxy;
+    }
+
+    public String getDbs() {
+        return dbs;
+    }
+
+    public void setDbs(String dbs) {
+        this.dbs = dbs;
+    }
+
+    public String getHtps() {
+        return htps;
+    }
+
+    public void setHtps(String htps) {
+        this.htps = htps;
+    }
+
+    public String getKh() {
+        return kh;
+    }
+
+    public void setKh(String kh) {
+        this.kh = kh;
+    }
+
+    public String getGdmc() {
+        return gdmc;
+    }
+
+    public void setGdmc(String gdmc) {
+        this.gdmc = gdmc;
+    }
+
+    public String getYdtcr() {
+        return ydtcr;
+    }
+
+    public void setYdtcr(String ydtcr) { this.ydtcr = ydtcr; }
+
+    public String getFwfshfws() {
+        return fwfshfws;
+    }
+
+    public void setFwfshfws(String fwfshfws) {
+        this.fwfshfws = fwfshfws;
+    }
+
+    public String getFwqxhtsyd() {
+        return fwqxhtsyd;
+    }
+
+    public void setFwqxhtsyd(String fwqxhtsyd) {
+        this.fwqxhtsyd = fwqxhtsyd;
+    }
+
+    public String getBz() {
+        return bz;
+    }
+
+    public void setBz(String bz) {
+        this.bz = bz;
+    }
+
+    public String getSfzf() {
+        return sfzf;
+    }
+
+    public void setSfzf(String sfzf) {
+        this.sfzf = sfzf;
+    }
+
+    public String getYxbz() {
+        return yxbz;
+    }
+
+    public void setYxbz(String yxbz) {
+        this.yxbz = yxbz;
+    }
+
+    public Date getCjsj() {
+        return cjsj;
+    }
+
+    public void setCjsj(Date cjsj) {
+        this.cjsj = cjsj;
+    }
+
+    public String getCjr() {
+        return cjr;
+    }
+
+    public void setCjr(String cjr) {
+        this.cjr = cjr;
+    }
+
+    public Date getXgsj() {
+        return xgsj;
+    }
+
+    public void setXgsj(Date xgsj) {
+        this.xgsj = xgsj;
+    }
+
+    public String getXgr() {
+        return xgr;
+    }
+
+    public void setXgr(String xgr) {
+        this.xgr = xgr;
+    }
+
+    @Override
+    public String toString() {
+        return "ContractManage{" +
+                "id=" + id +
+                ", htbh='" + htbh + '\'' +
+                ", jxs='" + jxs + '\'' +
+                ", wftqd='" + wftqd + '\'' +
+                ", flgk='" + flgk + '\'' +
+                ", ywgk='" + ywgk + '\'' +
+                ", clxhDm='" + clxhDm + '\'' +
+                ", htdj=" + htdj +
+                ", sl=" + sl +
+                ", htzje=" + htzje +
+                ", jxsykhjg=" + jxsykhjg +
+                ", scpj='" + scpj + '\'' +
+                ", hsdj=" + hsdj +
+                ", ysfsDm='" + ysfsDm + '\'' +
+                ", htdjsfhyf='" + htdjsfhyf + '\'' +
+                ", yfdj=" + yfdj +
+                ", wfcs=" + wfcs +
+                ", yfts=" + yfts +
+                ", cmrq=" + cmrq +
+                ", cmzh='" + cmzh + '\'' +
+                ", fkfsDm='" + fkfsDm + '\'' +
+                ", glf=" + glf +
+                ", lx=" + lx +
+                ", ydfktj='" + ydfktj + '\'' +
+                ", zbjdqsj=" + zbjdqsj +
+                ", zbj=" + zbj +
+                ", sfjxl='" + sfjxl + '\'' +
+                ", qdrq=" + qdrq +
+                ", htyj='" + htyj + '\'' +
+                ", jsxy='" + jsxy + '\'' +
+                ", fwxy='" + fwxy + '\'' +
+                ", dbs='" + dbs + '\'' +
+                ", htps='" + htps + '\'' +
+                ", kh='" + kh + '\'' +
+                ", gdmc='" + gdmc + '\'' +
+                ", ydtcr=" + ydtcr +
+                ", fwfshfws='" + fwfshfws + '\'' +
+                ", fwqxhtsyd='" + fwqxhtsyd + '\'' +
+                ", bz='" + bz + '\'' +
+                ", sfzf='" + sfzf + '\'' +
+                ", yxbz='" + yxbz + '\'' +
+                '}';
+    }
+}
+

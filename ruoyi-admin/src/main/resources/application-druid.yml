@@ -6,14 +6,14 @@ spring:
         druid:
             # 主库数据源
             master:
-                url: jdbc:mysql://123.138.199.226:3316/bpr?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+                url: jdbc:mysql://127.0.0.1:3306/bpr?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
                 username: bpr
                 password: bprCX123#@!
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭
                 enabled: true
-                url: jdbc:sqlserver://123.138.199.226:8050;DatabaseName=TLZG_VAM
+                url: jdbc:sqlserver://127.0.0.1:8050;DatabaseName=TLZG_VAM
                 username: sa
                 password: admin@123
             # 初始连接数
@@ -26,7 +26,7 @@ spring:
             maxWait: 60000
             # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
             timeBetweenEvictionRunsMillis: 60000
-            # 配置一个连接在池中最小生存的时间，单位是毫秒
+            # 配置一个连接在池中最小生存的时间，单位是毫秒git
             minEvictableIdleTimeMillis: 300000
             # 配置一个连接在池中最大生存的时间，单位是毫秒
             maxEvictableIdleTimeMillis: 900000

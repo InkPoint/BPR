@@ -1,0 +1,30 @@
+package com.ruoyi.bpr.mapper;
+
+import com.ruoyi.bpr.domain.FundManage;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface FundManageMapper {
+
+     /**
+     * 查询已收款项汇总
+     * @return
+     */
+    public  List selectFundManage();
+
+    /**
+     * 查询已收款项信息
+     * @param fundManage
+     * @return
+     */
+    public List<FundManage> selectFundManageList(FundManage fundManage);
+
+    /**
+     * 新增已收款项信息
+     * @param fundManage
+     * @return
+     */
+    public int insertFund(FundManage fundManage);
+}

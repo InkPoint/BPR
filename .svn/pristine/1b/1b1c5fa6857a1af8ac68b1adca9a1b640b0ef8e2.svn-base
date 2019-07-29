@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <th:block th:include="include :: header('合同录入')"/>
+    <th:block th:include="include :: bootstrap-select-css"/>
+</head>
+<body class="gray-bg">
+<div class="container-div">
+    <div class="row">
+        <div class="col-sm-12 search-collapse">
+            <form id="contractEntry-form">
+                <div class="select-list">
+                    <ul>
+                        <li>
+                            <label>合同编号： </label><input type="text" name="htbh"/>
+                        </li>
+                        <li>
+                            <label>经销商： </label><input type="text" name="jxs"/>
+                        </li>
+                        <li>
+                            <label>客户： </label><input type="text" name="kh"/>
+                        </li>
+                        <li class="select-time">
+                            <label>签订日期： </label>
+                            <input type="text" class="time-input" id="startTime" placeholder="开始时间"
+                                   name="params[beginTime]"/>
+                            <span>-</span>
+                            <input type="text" class="time-input" id="endTime" placeholder="结束时间"
+                                   name="params[endTime]"/>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary btn-rounded btn-sm" onclick="searchPre()"><i
+                                    class="fa fa-search"></i>&nbsp;搜索</a>
+                            <a class="btn btn-warning btn-rounded btn-sm" onclick="resetPre()"><i
+                                    class="fa fa-refresh"></i>&nbsp;重置</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <div class="btn-group-sm" id="toolbar" role="group">
+            <a class="btn btn-success" onclick="addContract()" shiro:hasPermission="contractmanage:contractentry:add">
+                <i class="fa fa-plus"></i>新增
+            </a>
+            <a class="btn btn-danger btn-del disabled" onclick="$.operate.remove()" shiro:hasPermission="contractmanage:contractentry:remove">
+                <i class="fa fa-remove"></i> 删除
+            </a>
+            <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="contractmanage:contractentry:export">
+                <i class="fa fa-download"></i> 导出
+            </a>
+        </div>
+
+        <div class="col-sm-12 select-table table-bordered">
+            <table id="bootstrap-table" class="text-nowrap" data-mobile-responsive="true"></table>
+        </div>
+    </div>
+</div>
+
+<th:block th:include="include :: footer"/>
+<th:block th:include="include :: bootstrap-select-js"/>
+<script th:inline="javascript">
+    var prefix = ctx + "contractmanage/contractentry";
+
+    $(function () {
+        var options = {
+            code:'id',
+            uniqueId: "id",
+            url: prefix + "/list",
+            removeUrl: prefix + "/remove/{id}",
+            exportUrl: prefix + "/export",
+            sortName: "qdrq",
+            sortOrder: "desc",
+            modalName: "合同一览表",
+            escape: true,
+            showPageGo: true,
+            rememberSelected: true,
+            columns: [
+                {
+                    checkbox: true
+                },
+                {
+                    field: 'id',
+                    title: '序号',
+                    align: 'center'
+                }, {
+                    field: 'htbh',
+                    title: '合同编号(TL-X-)',
+                    align: 'center'
+                }, {
+                    field: 'jxs',
+                    title: '经销商',
+                    halign: 'center',
+                    align: 'left'
+                }, {
+                    field: 'wftqd',
+                    title: '我方同签订',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 1) {
+                            return '总公司';
+                        } else if (value == 2) {
+                            return '分公司';
+                        }
+                    }
+
+                },
+                {
+                    field: 'flgk',
+                    title: '返利归口(经销商)',
+                    halign: 'center',
+                    align: 'left'
+                },
+                {
+                    field: 'ywgk',
+                    title: '业务归口(销售经理)',
+                    halign: 'center',
+                    align: 'left'
+                }, {
+                    field: 'clxhDm',
+                    title: '车型号',
+                    align: 'center'
+                }, {
+                    field: 'htdj',
+                    title: '合同单价',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'sl',
+                    title: '数量',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'htzje',
+                    title: '合同总金额',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'jxsykhjg',
+                    title: '经销商与客户价格',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'scpj',
+                    title: '随车配件',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'hsdj',
+                    title: '核算单价(交货价)',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'ysfsDm',
+                    title: '运输方式',
+                    halign: 'center',
+                    align: 'left',
+                    formatter: function (value, row, index) {
+                        if (value == 1) {
+                            return '自提';
+                        } else if (value == 2) {
+                            return '委托开运';
+                        } else if (value == 3) {
+                            return '板车托运';
+                        }
+                    }
+                }, {
+                    field: 'htdjsfhyf',
+                    title: '合同单价是否含运费',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 0) {
+                            return '是';
+                        } else if (value == 1) {
+                            return '否';
+                        }
+                    }
+                }, {
+                    field: 'yfdj',
+                    title: '运费单价(元/台)',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'wfcs',
+                    title: '未发车数',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'yfts',
+                    title: '已发台数',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'cmrq',
+                    title: '出门日期(或计划发车时间)',
+                    align: 'center'
+                }, {
+                    field: 'cmzh',
+                    title: '出门证号',
+                    align: 'center'
+                }, {
+                    field: 'fkfsDm',
+                    title: '付款方式',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 1) {
+                            return '<span class="badge badge-primary">全款</span>';
+                        } else if (value == 2) {
+                            return '<span class="badge badge-success">融资</span>';
+                        } else if (value == 3) {
+                            return '<span class="badge badge-warning">分期付款</span>';
+                        }
+                    }
+                }, {
+                    field: 'glf',
+                    title: '管理费',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'lx',
+                    title: '利息',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'ydfktj',
+                    title: '约定付款条件',
+                    halign: 'center',
+                    align: 'left'
+                }, {
+                    field: 'zbjdqsj',
+                    title: '质保金到期时间',
+                    align: 'center'
+                }, {
+                    field: 'zbj',
+                    title: '质保金',
+                    halign: 'center',
+                    align: 'right'
+                }, {
+                    field: 'sfjxl',
+                    title: '是否计销量',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 0) {
+                            return '是';
+                        } else if (value == 1) {
+                            return '否';
+                        }
+                    }
+                }, {
+                    field: 'qdrq',
+                    title: '签订日期',
+                    align: 'center',
+                    sortable: true
+                }, {
+                    field: 'htyj',
+                    title: '合同原件',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 0) {
+                            return '<span class="badge badge-primary"><i class="fa fa-check"></i></span>';
+                        } else if (value == 1) {
+                            return '<span class="badge badge-warning"><i class="fa fa-times"></i></span>';
+                        }
+                    }
+                }, {
+                    field: 'jsxy',
+                    title: '技术协议',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 0) {
+                            return '<span class="badge badge-primary"><i class="fa fa-check"></i></span>';
+                        } else if (value == 1) {
+                            return '<span class="badge badge-warning"><i class="fa fa-times"></i></span>';
+                        }
+                    }
+                }, {
+                    field: 'fwxy',
+                    title: '服务协议',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 0) {
+                            return '<span class="badge badge-primary"><i class="fa fa-check"></i></span>';
+                        } else if (value == 1) {
+                            return '<span class="badge badge-warning"><i class="fa fa-times"></i></span>';
+                        }
+                    }
+                }, {
+                    field: 'dbs',
+                    title: '担保书',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 0) {
+                            return '<span class="badge badge-primary"><i class="fa fa-check"></i></span>';
+                        } else if (value == 1) {
+                            return '<span class="badge badge-warning"><i class="fa fa-times"></i></span>';
+                        }
+                    }
+                }, {
+                    field: 'htps',
+                    title: '合同评审',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 0) {
+                            return '<span class="badge badge-primary"><i class="fa fa-check"></i></span>';
+                        } else if (value == 1) {
+                            return '<span class="badge badge-warning"><i class="fa fa-times"></i></span>';
+                        }
+                    }
+                }, {
+                    field: 'kh',
+                    title: '客户',
+                    halign: 'center',
+                    align: 'left'
+                }, {
+                    field: 'gdmc',
+                    title: '工地名称',
+                    halign: 'center',
+                    align: 'left'
+                }, {
+                    field: 'ydtcr',
+                    title: '约定提车日',
+                    align: 'center'
+                }, {
+                    field: 'fwfshfws',
+                    title: '服务方式(或服务商)',
+                    align: 'center',
+                    formatter: function (value, row, index) {
+                        if (value == 1) {
+                            return '同力';
+                        } else if (value == 2) {
+                            return '经销商';
+                        } else if (value == 3) {
+                            return '委托';
+                        }
+                    }
+                }, {
+                    field: 'fwqxhtsyd',
+                    title: '服务期限(或特殊约定)',
+                    halign: 'center',
+                    align: 'left'
+                }, {
+                    field: 'bz',
+                    title: '备注',
+                    halign: 'center',
+                    align: 'left'
+                }
+            ]
+        };
+        $.table.init(options);
+    });
+
+    function searchPre() {
+        var data = {};
+        $.table.search('contractEntry-form', data);
+    }
+
+    function resetPre() {
+        $.form.reset();
+    }
+
+    function addContract() {
+        var url = prefix + '/add/';
+        $.modal.openTab("新增合同", url);
+    }
+
+    // function delContract(){
+    //     var rows = $.common.isEmpty($.table._option.uniqueId) ? $.table.selectFirstColumns() : $.table.selectColumns($.table._option.uniqueId);
+    //     var url = prefix + '/del';
+    //     var data = $("#delete").serialize();
+    //     $.ajax({
+    //         'url':url,
+    //         'data':data,
+    //
+    //     })
+    // }
+
+</script>
+</body>
+</html>

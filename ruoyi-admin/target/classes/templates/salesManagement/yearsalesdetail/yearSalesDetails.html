@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <th:block th:include="include :: header('年度销售明细')"/>
+    <th:block th:include="include :: bootstrap-select-css"/>
+</head>
+<body class="gray-bg">
+<div class="container-div">
+    <div class="row">
+        <div class="col-sm-12 search-collapse">
+            <form id="annualSales-form">
+                <div class="select-list">
+                    <ul>
+                        <li class="select-time">
+                            <label>时间范围： </label>
+                            <input type="text" class="time-input" id="startTime" placeholder="开始时间"
+                                   name="params[beginTime]" data-format="yyyy-MM"/>
+                            <span>-</span>
+                            <input type="text" class="time-input" id="endTime" placeholder="结束时间" name="params[endTime]"
+                                   data-format="yyyy-MM"/>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary btn-rounded btn-sm" onclick="searchPre()"><i
+                                    class="fa fa-search"></i>&nbsp;搜索</a>
+                            <a class="btn btn-warning btn-rounded btn-sm" onclick="resetPre()"><i
+                                    class="fa fa-refresh"></i>&nbsp;重置</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <div class="btn-group-sm" id="toolbar" role="group">
+            <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="salesAccount:yearSalesDetail:export">
+                <i class="fa fa-download"></i> 导出
+            </a>
+        </div>
+
+        <div class="col-sm-12 select-table table-bordered">
+            <table id="bootstrap-table" data-mobile-responsive="true"></table>
+        </div>
+    </div>
+</div>
+
+<th:block th:include="include :: footer"/>
+<th:block th:include="include :: bootstrap-select-js"/>
+<script th:inline="javascript">
+    var prefix = ctx + "salesAccount/yearSalesDetail";
+
+    $(function () {
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth();
+        var day = date.getDate();
+        var options = {
+
+            exportUrl: prefix + "/export",
+
+            modalName: "年度销售明细",
+
+            url: "",
+            page:true,
+            escape: true,
+            rememberSelected: true,
+            striped:true,
+            pagination:true,
+            pageSize:10,
+            pageList:[10,20,50],
+            search:true,
+            searchText:"",
+            showPageGo: true,
+            columns: [[
+                {
+                    title: '销售大区',
+                    align: 'center',
+                    rowspan: 3
+                }, {
+                    title: '区域',
+                    align: 'center',
+                    rowspan: 3
+                }, {
+                    title: '经销商',
+                    align: 'center',
+                    rowspan: 3
+                }, {
+                    title: '期前欠款('+year+'年之前业务欠款)',
+                    align: 'center',
+                    colspan: 4
+                }, {
+                    title: year+'年发车数量',
+                    align: 'center',
+                    rowspan: 3
+                }, {
+                    title:  year+'年销售业务明细',
+                    align: 'center',
+                    colspan: 9
+                }, {
+                    title: '账上目前预付款',
+                    align: 'center',
+                    rowspan: 3
+                }, {
+                    title: '截止'+year+'年'+(month+1)+'月'+day+'日总欠款',
+                    align: 'center',
+                    rowspan: 3
+                }, {
+                    title: year+'年总收款',
+                    align: 'center',
+                    rowspan: 3
+                }
+            ],
+                [{
+                    field: 'userPhone',
+                    title: '期初销售发车',
+                    align: "center",
+                    colspan: 3
+                }, {
+                    field: 'userEmail',
+                    title: year-1+'年之前账上预付款转为'+year+'年预付款',
+                    align: "center",
+                    rowspan: 2
+                }, {
+                    field: 'userBalance',
+                    title: year+'年合同货值',
+                    align: "center",
+                    colspan: 3
+                }, {
+                    field: 'status',
+                    title: year+'年业务分期管理费、利息及其他费用',
+                    align: "center",
+                    colspan: 3
+                }, {
+                    title: year+'年代收代付运费',
+                    align: 'center',
+                    colspan: 3
+                }
+                ],
+                [{
+                    field: 'userPhone',
+                    align: "center",
+                    title: '应收'
+                }, {
+                    field: 'userEmail',
+                    align: "center",
+                    title: '实收'
+                }, {
+                    field: 'userBalance',
+                    align: "center",
+                    title: '欠款'
+                }, {
+                    field: 'status',
+                    align: "center",
+                    title: '应收'
+                }, {
+                    align: 'center',
+                    title: '实收'
+                }, {
+                    field: 'userPhone',
+                    align: "center",
+                    title: '欠款'
+                }, {
+                    field: 'userEmail',
+                    align: "center",
+                    title: '应收'
+                }, {
+                    field: 'userBalance',
+                    align: "center",
+                    title: '实收'
+                }, {
+                    field: 'status',
+                    align: "center",
+                    title: '欠款'
+                }, {
+                    field: 'status',
+                    align: "center",
+                    title: '应收'
+                }, {
+                    field: 'userPhone',
+                    align: "center",
+                    title: '实收'
+                }, {
+                    field: 'userEmail',
+                    align: "center",
+                    title: '欠款'
+                }
+                ]
+            ]
+        };
+        $.table.init(options);
+    });
+
+    function searchPre() {
+        var data = {};
+        $.table.search('annualSales-form', data);
+    }
+
+    function resetPre() {
+        $.form.reset();
+    }
+</script>
+</body>
+</html>

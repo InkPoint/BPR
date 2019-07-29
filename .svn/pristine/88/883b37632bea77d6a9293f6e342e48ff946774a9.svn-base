@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.vehicle.mapper.SysVehicleDetailsMapper">
+
+	<resultMap type="SysVehicleDetails" id="SysVehicleDetailsResult">
+		<id 	property="htbh" column="htbh"/>
+		<result property="jxs" 	column="jxs"/>
+		<result property="ywgk" column="ywgk"/>
+		<result property="sl" 	column="sl"/>
+		<result property="yfts" column="yfts"/>
+		<result property="cmrq" column="cmrq"/>
+		<result property="qdrq" column="qdrq"/>
+		<result property="mc" 	column="mc"/>
+		<result property="xh" 	column="xh"/>
+		<result property="clbh" column="clbh"/>
+	</resultMap>
+
+	<sql id="selectVehicleDetailsVo">
+       select htbh,jxs,ywgk,sl,yfts,cmrq,qdrq from dj_htyl
+    </sql>
+
+	<select id="selectVehicleDetailsList" parameterType="SysVehicleDetails" resultMap="SysVehicleDetailsResult">
+		<include refid="selectVehicleDetailsVo"/>
+		<where>
+			<if test="htbh != null and htbh != ''">
+				AND htbh like concat('%', #{htbh}, '%')
+			</if>
+			<if test="jxs != null and jxs != ''">
+				AND jxs like concat('%', #{jxs}, '%')
+			</if>
+			<if test="ywgk != null and ywgk != ''">
+			    AND ywgk like concat('%', #{ywgk}, '%')
+			</if>
+			<if test="params.beginTime != null and params.beginTime != ''"><!-- 开始时间检索 -->
+				and date_format(qdrq,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+			</if>
+			<if test="params.endTime != null and params.endTime != ''"><!-- 结束时间检索 -->
+				and date_format(qdrq,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+			</if>
+		</where>
+	</select>
+
+</mapper> 

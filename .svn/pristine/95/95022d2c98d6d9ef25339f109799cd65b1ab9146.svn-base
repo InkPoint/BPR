@@ -1,0 +1,46 @@
+package com.ruoyi.bpr.service.impl;
+
+import com.ruoyi.bpr.domain.FundManage;
+import com.ruoyi.bpr.mapper.FundManageMapper;
+import com.ruoyi.bpr.service.IFundManageService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+public class FundManageServiceImpl implements IFundManageService {
+
+    @Autowired
+    private FundManageMapper fundManageMapper;
+
+    @Override
+    public List<FundManage> selectFundManageList(FundManage fundManage) {
+        return fundManageMapper.selectFundManageList(fundManage);
+    }
+
+    @Override
+    public int insertFund(FundManage fundManage) {
+        return fundManageMapper.insertFund(fundManage);
+    }
+
+    @Override
+    public List<FundManage> selectFundManage(FundManage fundManage) {
+        return fundManageMapper.selectFundManage(fundManage);
+    }
+
+    @Override
+    public List<FundManage> selectClientMenu() {
+        return fundManageMapper.selectClientMenu();
+    }
+
+    @Override
+    public int deleteFundByIds(FundManage fundManage) {
+        return fundManageMapper.deleteFundByIds(fundManage);
+    }
+
+    @Override
+    public int updateFundInfo(FundManage fundManage) {
+        return fundManageMapper.updateFundInfo(fundManage);
+    }
+}
