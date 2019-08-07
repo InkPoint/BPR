@@ -4,12 +4,13 @@
     <bookmark url="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" line="15" />
     <bookmark url="file://$PROJECT_DIR$/ruoyi-common/src/main/java/com/ruoyi/common/utils/sql/DBUtil.java" line="20" />
     <bookmark url="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java" line="135" />
+    <bookmark url="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/applydepart/applydepart.html" line="112" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="54507969-4320-446c-a1c5-91709d2b7228" name="Default Changelist" comment="1.">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/ruoyi-admin/target/" />
@@ -31,10 +32,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java">
+        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/vehicle/SysCarDespatchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2024">
-              <caret line="90" column="63" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
+            <state relative-caret-position="230">
+              <caret line="86" column="73" selection-start-line="86" selection-start-column="73" selection-end-line="86" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,89 +44,76 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/fundmanage/FundManageMapper.xml">
+        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/ISysCarDespatchService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+            <state relative-caret-position="84">
+              <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
               <folding>
-                <element signature="n#update#0;n#mapper#0;n#!!top" />
-                <element signature="n#select#3;n#mapper#0;n#!!top" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/domain/SysCarDespatch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/mapper/SysCarDespatchMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/impl/SysCarDespatchServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="54" column="81" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/vehicle/SysCarDespatchMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="644">
+              <caret line="71" column="96" selection-start-line="71" selection-start-column="96" selection-end-line="71" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/cardespatch/cardespatch.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="13" column="87" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="87" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/recievefund.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1311">
-              <caret line="57" column="82" selection-start-line="57" selection-start-column="82" selection-end-line="57" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1748">
-              <caret line="76" column="118" selection-start-line="76" selection-start-column="118" selection-end-line="76" selection-end-column="118" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#label#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/mapper/FundManageMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="989">
-              <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/IFundManageService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/impl/FundManageServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#733#734#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
-                <element signature="e#1146#1147#0" expanded="true" />
-                <element signature="e#1211#1212#0" expanded="true" />
-                <element signature="e#1269#1270#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="253">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -141,25 +129,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>若依启动成功</find>
-      <find>RuoYi</find>
-      <find>Copyrigh</find>
-      <find>iphone</find>
-      <find>sh</find>
-      <find>mysql驱动</find>
-      <find>驱动</find>
-      <find>合同</find>
-      <find>startTime</find>
-      <find>com.mysql.cj</find>
-      <find>DUAL</find>
-      <find>createTime</find>
-      <find>Date</find>
-      <find>resetPre</find>
-      <find>businessTypes</find>
-      <find>sqlserver</find>
-      <find>用于管理集团旗下公司的人员信息,具体包括XXX,XXX模块</find>
-      <find>createtime</find>
-      <find>create</find>
       <find>selectFundManageList</find>
       <find>th:each</find>
       <find>required</find>
@@ -171,7 +140,30 @@
       <find>selectDictTypeById</find>
       <find>rem</find>
       <find>Service started successfully</find>
+      <find>uuid</find>
+      <find>remove</find>
+      <find>uniqueId</find>
+      <find>btn-edit</find>
+      <find>btn</find>
+      <find>editUrl</find>
+      <find>apply</find>
+      <find>isnot</find>
+      <find>oper</find>
+      <find>SysPost</find>
+      <find>post</find>
+      <find>updateUrl</find>
+      <find>selectClientMenu</find>
+      <find>money</find>
+      <find>insertPost</find>
+      <find>clientList</find>
+      <find>接口</find>
+      <find>insert</find>
+      <find>deleteDictDataByIds</find>
     </findStrings>
+    <replaceStrings>
+      <replace>SysCarDespatch</replace>
+      <replace>carDespatch</replace>
+    </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -195,16 +187,29 @@
         <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/contractmanage/contractentry/contractentry.html" />
         <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/domain/FundManage.java" />
         <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/add.html" />
-        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/static/ruoyi/js/ry-ui.js" />
         <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/edit.html" />
         <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/IFundManageService.java" />
         <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/mapper/FundManageMapper.java" />
         <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/impl/FundManageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java" />
         <option value="$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/fundmanage/FundManageMapper.xml" />
-        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/recievefund.html" />
         <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/vehicle/SysApplyDepartController.java" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/static/ruoyi/js/ry-ui.js" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/applydepart/applydepart.html" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/cardespatch/add.html" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/domain/SysCarDespatch.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/ISysCarDespatchService.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysDictTypeMapper.xml" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/recievefund.html" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/cardespatch/edit.html" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/vehicle/SysCarDespatchController.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/mapper/SysCarDespatchMapper.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/impl/SysCarDespatchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/vehicle/SysCarDespatchMapper.xml" />
+        <option value="$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/cardespatch/cardespatch.html" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -223,11 +228,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1696" />
-    <option name="height" value="1036" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="854" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -237,8 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,117 +248,12 @@
               <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
               <item name="BPR" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="contractentry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="fundmanage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="fundmanage" type="462c0819:PsiDirectoryNode" />
-              <item name="recievefund" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="dict" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ruoyi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BPR" type="462c0819:PsiDirectoryNode" />
-              <item name="ruoyi-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="dict" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,7 +263,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/GitProject/DBlog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -379,20 +276,22 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ruoyi.vehicle.service.impl" />
       <recent name="com.ruoyi.vehicle.mapper" />
-      <recent name="com.ruoyi.vehicle.service" />
       <recent name="com.ruoyi.vehicle.domain" />
+      <recent name="com.ruoyi.vehicle.service" />
       <recent name="com.ruoyi.web.controller.vehicle" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SvnProject\BPR\ruoyi-admin\src\main\resources\templates\vehicle\cardespatch" />
+      <recent name="D:\SvnProject\BPR\ruoyi-system\src\main\resources\mapper\vehicle" />
+      <recent name="D:\SvnProject\BPR\ruoyi-admin\src\main\resources\templates\vehicle\applydepart" />
       <recent name="D:\SvnProject\BPR\ruoyi-admin\src\main\resources\templates\fundmanage\recievefund" />
       <recent name="D:\SvnProject\BPR\ruoyi-admin\src\main\resources\templates\vehicle\repertory" />
-      <recent name="D:\SvnProject\BPR\ruoyi-system\src\main\resources\mapper\vehicle" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -400,9 +299,9 @@
       <command value="RuoYiApplication、" />
       <command value="mvn install" />
       <command value="BPR" />
-      <command value="mvn clean" />
       <command value="mvn compile" />
       <command value="RuoYiApplication" />
+      <command value="mvn clean" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -535,7 +434,11 @@
       <workItem from="1563846865493" duration="4556000" />
       <workItem from="1563867690986" duration="38008000" />
       <workItem from="1564361117217" duration="1573000" />
-      <workItem from="1564363441057" duration="584000" />
+      <workItem from="1564363441057" duration="824000" />
+      <workItem from="1564364292715" duration="1703000" />
+      <workItem from="1564450621143" duration="67303000" />
+      <workItem from="1565080251538" duration="251000" />
+      <workItem from="1565080681583" duration="16507000" />
     </task>
     <task id="LOCAL-00001" summary="1.新增从库SQL Server；&#10;2.把driverClassName注释了；">
       <created>1563183343880</created>
@@ -768,17 +671,101 @@
       <option name="project" value="LOCAL" />
       <updated>1563951595274</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="1.申请操作封装处理；">
+      <created>1564711164040</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1564711164040</updated>
+    </task>
+    <task id="LOCAL-00035" summary="1.新增申请发车模块；">
+      <created>1564727847862</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1564727847862</updated>
+    </task>
+    <task id="LOCAL-00036" summary="1.修改Log日志状态；">
+      <created>1565148839018</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1565148839018</updated>
+    </task>
+    <task id="LOCAL-00037" summary="1.新增车辆发运模块；">
+      <created>1565156646727</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1565156646727</updated>
+    </task>
+    <task id="LOCAL-00038" summary="1.新增车辆发运模块；">
+      <created>1565156667833</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1565156667833</updated>
+    </task>
+    <task id="LOCAL-00039" summary="1.新增车辆发运模块；">
+      <created>1565159901724</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1565159901724</updated>
+    </task>
+    <task id="LOCAL-00040" summary="1.新增车辆发运模块；">
+      <created>1565159919656</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1565159919656</updated>
+    </task>
+    <task id="LOCAL-00041" summary="1.新增车辆发运模块；">
+      <created>1565159942231</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1565159942231</updated>
+    </task>
+    <task id="LOCAL-00042" summary="1.新增车辆发运模块；">
+      <created>1565159958275</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1565159958275</updated>
+    </task>
+    <task id="LOCAL-00043" summary="1.新增车辆发运模块；">
+      <created>1565159976709</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1565159976709</updated>
+    </task>
+    <task id="LOCAL-00044" summary="1.新增车辆发运模块；">
+      <created>1565159997652</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1565159997652</updated>
+    </task>
+    <task id="LOCAL-00045" summary="1.新增车辆发运模块；">
+      <created>1565160022624</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1565160022624</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188973000" />
+    <option name="totallyTimeSpent" value="274977000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18813469" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1940139" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -789,13 +776,13 @@
       <window_info id="Alibaba Cloud Explorer" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.35930735" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.44047618" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.41666666" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35930735" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23701298" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.39285713" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.5151515" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32900432" />
@@ -879,447 +866,379 @@
     <MESSAGE value="1.异步删除；" />
     <MESSAGE value="1.修改已收账款；" />
     <MESSAGE value="1.调试优化；" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.调试优化；" />
+    <MESSAGE value="1.申请操作封装处理；" />
+    <MESSAGE value="1.新增申请发车模块；" />
+    <MESSAGE value="1.修改Log日志状态；" />
+    <MESSAGE value="1.新增车辆发运模块；" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.新增车辆发运模块；" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/basics/SysDealerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-299">
-          <caret line="62" column="88" lean-forward="true" selection-start-line="62" selection-start-column="88" selection-end-line="62" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/impl/SysVehicleDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/vehicle/SysVehicleDetailsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/vehicledetails/vehicledetails.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysRoleDeptMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2300">
-          <caret line="163" column="43" selection-start-line="163" selection-start-column="37" selection-end-line="163" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysRoleMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="54" column="97" lean-forward="true" selection-start-line="54" selection-start-column="97" selection-end-line="54" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/vehicle/SysVehicleDetailsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="41" column="55" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/ISysDealerService.java">
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/post/post.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <caret line="34" column="65" selection-start-line="34" selection-start-column="62" selection-end-line="34" selection-end-column="65" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/basics/client/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1035" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/role/role.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
-          <caret line="32" column="101" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="101" />
-          <folding>
-            <element signature="e#1353#1359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/monitor/operlog/operlog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="135" column="20" selection-start-line="135" selection-start-column="20" selection-end-line="135" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/org/springframework/ui/ModelMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/monitor/operlog/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="71" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="71" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/static/ajax/libs/validate/jquery.validate.extend.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="32" selection-end-line="52" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-framework/src/main/java/com/ruoyi/framework/aspectj/DataScopeAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="78" column="16" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-common/src/main/java/com/ruoyi/common/utils/poi/ExcelUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="59" column="79" lean-forward="true" selection-start-line="59" selection-start-column="79" selection-end-line="59" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2852">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/user/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="99" column="40" lean-forward="true" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysOperLogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/monitor/SysOperlogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding>
-            <element signature="method#list#0;class#SysOperlogController#0" />
-            <element signature="e#2217#2218#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysOperLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="75" column="11" lean-forward="true" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="11" />
-          <folding>
-            <element signature="e#2674#2678#0" expanded="true" />
-            <element signature="e#2849#2853#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-common/src/main/java/com/ruoyi/common/core/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="110" column="46" lean-forward="true" selection-start-line="110" selection-start-column="46" selection-end-line="110" selection-end-column="46" />
-          <folding>
-            <element signature="e#2829#2830#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/InternetApplications/Java/jdk-8u202/src.zip!/java/lang/Throwable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="375" column="32" lean-forward="true" selection-start-line="375" selection-start-column="32" selection-end-line="375" selection-end-column="32" />
-          <folding>
-            <element signature="e#15747#15748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-quartz/src/main/resources/templates/monitor/job/job.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="153" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/domain/FundManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/dict/data/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="24" selection-end-line="81" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/dict/data/data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="125" column="51" selection-start-line="125" selection-start-column="51" selection-end-line="125" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/dict/data/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2185">
-          <caret line="95" column="83" lean-forward="true" selection-start-line="95" selection-start-column="83" selection-end-line="95" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysDictTypeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDictTypeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="61" column="37" lean-forward="true" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
-          <folding>
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1541#1542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDictTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysDictTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="93" column="69" lean-forward="true" selection-start-line="93" selection-start-column="69" selection-end-line="93" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysDictTypeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="79" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/static/ruoyi/js/ry-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="729" column="49" lean-forward="true" selection-start-line="729" selection-start-column="49" selection-end-line="729" selection-end-column="49" />
-          <folding>
-            <element signature="e#231#5416#0" />
-            <element signature="e#25#31#1" expanded="true" />
-            <element signature="e#18402#21118#0" />
-            <element signature="e#21149#22167#0" />
-            <element signature="e#22200#30381#0" />
-            <element signature="e#30500#31051#0" />
-            <element signature="e#31424#31889#0" />
-            <element signature="e#31949#32528#0" />
-            <element signature="e#33180#33691#0" />
-            <element signature="e#33743#33969#0" />
-            <element signature="e#34021#34122#0" />
-            <element signature="e#34186#34290#0" />
-            <element signature="e#34349#34558#0" />
-            <element signature="e#34615#34779#0" />
-            <element signature="e#35537#35639#0" />
-            <element signature="e#35699#36194#0" />
-            <element signature="e#36252#36831#0" />
-            <element signature="e#36906#37498#0" />
-            <element signature="e#37579#38474#0" />
-            <element signature="e#38550#39108#0" />
-            <element signature="e#39187#39848#0" />
-            <element signature="e#40399#41430#0" />
-            <element signature="e#41517#42644#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/contractmanage/contractentry/contractentry.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="146" column="20" lean-forward="true" selection-start-line="146" selection-start-column="20" selection-end-line="147" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="28" column="103" lean-forward="true" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="103" />
+        <state relative-caret-position="506">
+          <caret line="64" column="37" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/contractmanage/contractentry/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="263" column="73" lean-forward="true" selection-start-line="263" selection-start-column="73" selection-end-line="263" selection-end-column="73" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#22150#22729#0" />
-            <element signature="e#22753#22828#0" />
-            <element signature="e#22849#23388#0" />
-            <element signature="e#23415#23962#0" />
-            <element signature="e#23981#24577#0" />
-          </folding>
+        <state relative-caret-position="291">
+          <caret line="566" column="16" selection-start-line="566" selection-start-column="16" selection-end-line="566" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/RuoYiApplication.java">
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysUserPostMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-generator/src/main/resources/mapper/generator/GenMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-framework/src/main/java/com/ruoyi/framework/config/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="18" column="80" lean-forward="true" selection-start-line="18" selection-start-column="80" selection-end-line="18" selection-end-column="80" />
+        <state relative-caret-position="-943">
+          <caret line="233" column="21" selection-start-line="233" selection-start-column="21" selection-end-line="233" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="230">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java">
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/salesmanager/SalesDataMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2024">
-          <caret line="90" column="63" selection-start-line="90" selection-start-column="63" selection-end-line="90" selection-end-column="63" />
+        <state relative-caret-position="138">
+          <caret line="63" column="17" lean-forward="true" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/basics/SysDealerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1725" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysPostController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="60" column="72" selection-start-line="60" selection-start-column="72" selection-end-line="60" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/fundmanage/FundManageMapper.xml">
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/tool/SwaggerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+        <state relative-caret-position="345">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/core/config/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysPostMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="27" column="59" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="59" />
           <folding>
-            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#sql#0;n#mapper#0;n#!!top" />
+            <element signature="n#select#1;n#mapper#0;n#!!top" />
+            <element signature="n#select#2;n#mapper#0;n#!!top" />
             <element signature="n#select#3;n#mapper#0;n#!!top" />
+            <element signature="n#select#4;n#mapper#0;n#!!top" />
+            <element signature="n#select#5;n#mapper#0;n#!!top" />
+            <element signature="n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/recievefund.html">
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysRoleDeptMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysUserRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysOperLogMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="57" column="82" selection-start-line="57" selection-start-column="82" selection-end-line="57" selection-end-column="82" />
+        <state relative-caret-position="184">
+          <caret line="37" column="34" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysRoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="100" column="45" lean-forward="true" selection-start-line="100" selection-start-column="45" selection-end-line="100" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/role/role.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1311" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/monitor/operlog/operlog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1518" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysRoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/IClientManageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/basics/ClientController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/domain/ClientManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/basics/ClientMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="73" column="72" selection-start-line="73" selection-start-column="72" selection-end-line="73" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/static/ruoyi/js/ry-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="864" column="12" selection-start-line="864" selection-start-column="12" selection-end-line="864" selection-end-column="12" />
+          <folding>
+            <element signature="e#25#31#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/config/config.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-713">
+          <caret line="21" column="135" selection-start-line="21" selection-start-column="135" selection-end-line="21" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/system/dict/data/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1403">
+          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDictTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="118" column="15" selection-start-line="118" selection-start-column="15" selection-end-line="118" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDictTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="66" column="15" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysDictTypeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="76" column="118" selection-start-line="76" selection-start-column="118" selection-end-line="76" selection-end-column="118" />
+        <state relative-caret-position="207">
+          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/fundmanage/recievefund/recievefund.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysDictTypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="107" column="48" lean-forward="true" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/fundmanage/RecieveFundController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="145" column="60" lean-forward="true" selection-start-line="145" selection-start-column="60" selection-end-line="145" selection-end-column="60" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#3;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#label#0;n#div#5;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/mapper/FundManageMapper.java">
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/domain/SysDictData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="989">
-          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+        <state relative-caret-position="-690">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/system/SysDictDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="116" column="52" selection-start-line="116" selection-start-column="52" selection-end-line="116" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/ISysDictDataService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/service/impl/SysDictDataServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+          <folding>
+            <element signature="e#1961#1962#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/system/mapper/SysDictDataMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/system/SysDictDataMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="65" column="4" selection-start-line="65" selection-start-column="4" selection-end-line="70" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/java/com/ruoyi/web/controller/vehicle/SysCarDespatchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="86" column="73" selection-start-line="86" selection-start-column="73" selection-end-line="86" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/IFundManageService.java">
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/cardespatch/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+        <state relative-caret-position="184">
+          <caret line="8" column="91" selection-start-line="8" selection-start-column="91" selection-end-line="8" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/ISysCarDespatchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="28" column="69" selection-start-line="28" selection-start-column="69" selection-end-line="28" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/bpr/service/impl/FundManageServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/domain/SysCarDespatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+        <state relative-caret-position="161">
+          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#733#734#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1269#1270#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/application-druid.yml">
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/mapper/SysCarDespatchMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+        <state relative-caret-position="506">
+          <caret line="22" column="82" selection-start-line="22" selection-start-column="82" selection-end-line="22" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/java/com/ruoyi/vehicle/service/impl/SysCarDespatchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="54" column="81" selection-start-line="54" selection-start-column="81" selection-end-line="54" selection-end-column="81" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-system/src/main/resources/mapper/vehicle/SysCarDespatchMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="71" column="96" selection-start-line="71" selection-start-column="96" selection-end-line="71" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/cardespatch/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruoyi-admin/src/main/resources/templates/vehicle/cardespatch/cardespatch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="87" selection-start-line="13" selection-start-column="87" selection-end-line="13" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>

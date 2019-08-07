@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.vehicle.mapper.SysCarDespatchMapper">
+
+    <resultMap id="SysCarDespatchResult" type="SysCarDespatch">
+        <id property="despatchCode" column="despatch_code"/>
+        <result property="pactID" column="pact_id"/>
+        <result property="pactCode" column="pact_code"/>
+        <result property="clientName" column="client_name"/>
+        <result property="pactTotalAmount" column="pact_total_amount"/>
+        <result property="despatchAmount" column="despatch_amount"/>
+        <result property="remark" column="remark"/>
+        <result property="createTime" column="create_time"/>
+        <result property="ack" column="ack"/>
+    </resultMap>
+
+    <sql id="selectCarDespatchVo">
+        select despatch_code,pact_code,despatch_amount,remark,create_time,ack from car_despatch
+    </sql>
+
+    <insert id="insertCarDespatch" parameterType="SysCarDespatch">
+        insert into car_despatch(pact_code,despatch_amount,remark,create_by,create_time,ack)
+        values (#{pactCode},#{despatchAmount},#{remark},#{createBy},sysdate(),'Y')
+    </insert>
+
+    <select id="selectCarDespatchList" parameterType="SysCarDespatch" resultMap="SysCarDespatchResult">
+        <include refid="selectCarDespatchVo"/>
+        <where>
+            and ack = 'Y'
+<!--            <if test="postCode != null and postCode != ''">-->
+<!--            </if>-->
+            <if test="pactCode != null and pactCode != ''">
+                and pact_code like concat('%',#{pactCode},"%")
+            </if>
+            <if test="params.beginTime != null and params.beginTime != ''">
+                and date_format(create_time,'%y%m%d') &gt;= date_format(#{params.beginTime},'%y%m%d')
+            </if>
+            <if test="params.endTime != null and params.endTime != ''">
+                and date_format(create_time,'%y%m%d') &lt;= date_format(#{params.endTime},'%y%m%d')
+            </if>
+        </where>
+    </select>
+
+    <select id="selectCarDespatchById" parameterType="String" resultMap="SysCarDespatchResult">
+        <include refid="selectCarDespatchVo"/>
+        <where>
+           and despatch_code = #{despatchCode}
+        </where>
+    </select>
+
+    <update id="updateCarDespatch" parameterType="SysCarDespatch">
+        update car_despatch
+        <set>
+            <if test="pactCode != null and pactCode != ''">pact_code = #{pactCode},</if>
+            <if test="despatchAmount != null and despatchAmount != ''">despatch_amount = #{despatchAmount},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            <if test="updateBy != null and updateBy != ''">update_by = #{updateBy},</if>
+            update_time = sysdate()
+        </set>
+        where despatch_code = #{despatchCode}
+    </update>
+
+    <delete id="deleteCarDespatchByIds" parameterType="String">
+        update car_despatch set ack = 'N' where despatch_code in
+        <foreach collection="array" item="despatchCode" open="(" separator="," close=")">
+            #{despatchCode}
+        </foreach>
+    </delete>
+
+    <select id="selectPactMenu" parameterType="SysCarDespatch" resultMap="SysCarDespatchResult">
+       select t.id as pact_id,t.htbh as pact_code  from dj_htyl t where t.yxbz = 'Y'
+    </select>
+
+</mapper> 

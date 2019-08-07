@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org" xmlns:shiro="http://www.pollix.at/thymeleaf/shiro">
+<head>
+    <th:block th:include="include :: header('车辆发运')"/>
+</head>
+<body class="gray-bg">
+<div class="container-div">
+    <div class="row">
+        <div class="col-sm-12 search-collapse">
+            <form id="cardespatch-form">
+                <div class="select-list">
+                    <ul>
+                        <li>
+                            <label>客户名称： </label><input type="text" name="clientName"/>
+                        </li>
+                        <li>
+                            <label>合同编号： </label><input type="text" name="pactCode"/>
+                        </li>
+                        <li class="select-time">
+                            <label>发运时间： </label>
+                            <input type="text" class="time-input" id="startTime" placeholder="开始时间"
+                                   name="params[beginTime]"/>
+                            <span>-</span>
+                            <input type="text" class="time-input" id="endTime" placeholder="结束时间"
+                                   name="params[endTime]"/>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary btn-rounded btn-sm" onclick="searchPre()"><i
+                                    class="fa fa-search"></i>&nbsp;搜索</a>
+                            <a class="btn btn-warning btn-rounded btn-sm" onclick="resetPre()"><i
+                                    class="fa fa-refresh"></i>&nbsp;重置</a>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <div class="btn-group-sm" id="toolbar" role="group">
+            <a class="btn btn-success" onclick="$.operate.add()" shiro:hasPermission="vehicle:cardespatch:add">
+                <i class="fa fa-plus"></i> 新增
+            </a>
+            <a class="btn btn-primary btn-edit disabled" onclick="$.operate.edit()" shiro:hasPermission="vehicle:cardespatch:edit">
+                <i class="fa fa-edit"></i> 修改
+            </a>
+            <a class="btn btn-danger btn-del disabled" onclick="$.operate.removeAll()" shiro:hasPermission="vehicle:cardespatch:remove">
+                <i class="fa fa-remove"></i> 删除
+            </a>
+            <a class="btn btn-warning" onclick="$.table.exportExcel()" shiro:hasPermission="vehicle:cardespatch:export">
+                <i class="fa fa-download"></i> 导出
+            </a>
+        </div>
+
+        <div class="col-sm-12 select-table table-striped">
+            <table id="bootstrap-table" data-mobile-responsive="true"></table>
+        </div>
+    </div>
+</div>
+
+<th:block th:include="include :: footer"/>
+<script th:inline="javascript">
+    var editFlag = [[${@permission.hasPermi('vehicle:cardespatch:edit')}]];
+    var removeFlag = [[${@permission.hasPermi('vehicle:cardespatch:remove')}]];
+    var prefix = ctx + "vehicle/cardespatch";
+
+    $(function () {
+        var options = {
+            code: "despatchCode",
+            uniqueId: "despatchCode",
+            url: prefix + "/list",
+            createUrl: prefix + "/add",
+            updateUrl: prefix + "/edit/{id}",
+            removeUrl: prefix + "/remove",
+            exportUrl: prefix + "/export",
+            sortName: "createTime",
+            modalName: "发运",
+            columns: [{
+                checkbox: true
+            }, {
+                field: 'clientName',
+                title: '客户名称'
+            }, {
+                field: 'pactCode',
+                title: '合同编号(TL-X-)'
+            }, {
+                field: 'pactTotalAmount',
+                title: '合同总量(台)'
+            }, {
+                field: 'despatchAmount',
+                title: '发运量(台)',
+                align: 'center',
+                formatter: function (value, row, index) {
+                    return '<span class="badge badge-info">' + value + '</span>';
+                }
+            }, {
+                field: 'remark',
+                title: '备注'
+            }, {
+                field: 'createTime',
+                title: '发运时间',
+                align: 'center',
+                sortable: true
+            }, {
+                title: '操作',
+                align: 'center',
+                formatter: function (value, row, index) {
+                    var actions = [];
+                    actions.push('<a class="btn btn-success btn-xs ' + editFlag + '" href="javascript:void(0)" onclick="$.operate.edit(\'' + row.despatchCode + '\')"><i class="fa fa-edit"></i>编辑</a> ');
+                    actions.push('<a class="btn btn-danger btn-xs ' + removeFlag + '" href="javascript:void(0)" onclick="$.operate.remove(\'' + row.despatchCode + '\')"><i class="fa fa-remove"></i>删除</a>');
+                    return actions.join('');
+                }
+            }]
+        };
+        $.table.init(options);
+    });
+
+    function searchPre() {
+        $.table.search('cardespatch-form');
+    }
+
+    function resetPre() {
+        $.form.reset();
+        $("#businessTypes").selectpicker('refresh');
+    }
+</script>
+</body>
+</html>

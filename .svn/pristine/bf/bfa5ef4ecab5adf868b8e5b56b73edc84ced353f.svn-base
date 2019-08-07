@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:include="include :: header('收款明细')"/>
+    <th:block th:include="include :: jsonview-css"/>
+</head>
+<body class="white-bg">
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+    <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>合同号</th>
+            <th>客户</th>
+            <th>分配时间</th>
+            <th>付款金额</th>
+            <th>付款方式</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="money:${moneyInList}">
+            <td th:text="${money.contractNumber}"></td>
+            <td th:text="${money.customer}"></td>
+
+            <td th:text="${#dates.format(money.createdTime,'yyyy-MM-dd HH:mm:ss')}"></td>
+            <td th:text="${money.paymentAmount}"></td>
+            <td th:text="${money.paymentType=='E'}?'电汇':'承兑' "></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<th:block th:include="include :: footer"/>
+<th:block th:include="include :: jsonview-js"/>
+<script th:inline="javascript">
+    $(function () {
+        var json = [[${operLog.operParam}]];
+        if ($.common.isNotEmpty(json) && json.length < 2000) {
+            $("#operParam").JSONView(json);
+        } else {
+            $("#operParam").text(json);
+        }
+    });
+</script>
+</body>
+</html>
