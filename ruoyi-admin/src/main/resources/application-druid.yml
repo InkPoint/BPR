@@ -6,16 +6,16 @@ spring:
         druid:
             # 主库数据源
             master:
-                url: jdbc:mysql://123.138.199.226:3316/bpr?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
-                username: bpr
-                password: bprCX123#@!
+                url: jdbc:mysql://127.0.0.1:3306/bpr?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+                username: root
+                password: root
             # 从库数据源
             slave:
                 # 从数据源开关/默认关闭
                 enabled: true
-                url: jdbc:sqlserver://123.138.199.226:8050;DatabaseName=TLZG_VAM
-                username: sa
-                password: admin@123
+                url: jdbc:sqlserver://127.0.0.1:3306;DatabaseName=TLZG_VAM
+                username: root
+                password: root
             # 初始连接数
             initialSize: 5
             # 最小连接池数量
