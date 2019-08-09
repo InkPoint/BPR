@@ -6,7 +6,6 @@ import com.ruoyi.common.core.domain.AjaxResult;
 import com.ruoyi.common.core.page.TableDataInfo;
 import com.ruoyi.common.enums.BusinessType;
 import com.ruoyi.framework.util.ShiroUtils;
-import com.ruoyi.system.domain.SysPost;
 import com.ruoyi.vehicle.domain.SysCarDespatch;
 import com.ruoyi.vehicle.service.ISysCarDespatchService;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
